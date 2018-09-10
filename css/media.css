@@ -2,4 +2,13 @@
   .franchise-calc__list li:hover {
     color: #f77846;
   }
+  .myImg:hover {
+    opacity: 0.7;
+  }
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
