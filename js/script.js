@@ -17,12 +17,12 @@ var modalImg = $("#img01");
     img.on('click', function(){
         modal.css("display","block");
         modalImg.attr('src', $(this).attr('src'));
-        $('body').css("overflow","hidden");
+        $('body,html').css("overflow","hidden");
     });
 //modal close
 var span = $(".close");
 
 span.on('click',function(){
     modal.css("display","none");
-    $('body').css("overflow","visible");
+    $('body,html').css("overflow","visible");
 });
