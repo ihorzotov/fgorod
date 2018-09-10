@@ -1,0 +1,5 @@
+@media (min-width: 1025px) {
+  .franchise-calc__list li:hover {
+    color: #f77846;
+  }
+}
