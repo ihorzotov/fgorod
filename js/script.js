@@ -18,7 +18,7 @@ var modalImg = $("#img01");
     img.on('click', function(){
         modal.css("display","block");
         modalImg.attr('src', $(this).attr('src'));
-        $('body,main').css("overflow","hidden");
+        $('main').css("overflow","hidden");
     });
 
 
@@ -26,5 +26,5 @@ var span = $(".close");
 
 span.on('click',function(){
     modal.css("display","none");
-    $('body,main').css("overflow","visible");
+    $('main').css("overflow","visible");
 });
