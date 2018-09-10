@@ -2,7 +2,7 @@ var franCalc = $('.franchise-calc__list li');
 franCalc.on('click',function(){
   $(this).addClass('active');
  franCalc.not($(this)).removeClass('active');
- franCalc.attr('data')
+ // franCalc.attr('data')
 });
 
 $('.franchise-tabs__btn span').on('click',function(){
@@ -10,7 +10,8 @@ $('.franchise-tabs__btn span').on('click',function(){
  $('.franchise-tabs__btn span').not($(this)).removeClass('active');
 });
 
-//Get the modal
+
+
 var modal = $('#myModal');
 var img = $('.myImg');
 var modalImg = $("#img01");
@@ -19,7 +20,8 @@ var modalImg = $("#img01");
         modalImg.attr('src', $(this).attr('src'));
         $('body,main').css("overflow","hidden");
     });
-//modal close
+
+
 var span = $(".close");
 
 span.on('click',function(){
