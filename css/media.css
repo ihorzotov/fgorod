@@ -114,17 +114,14 @@
     opacity: 1;
     transform: scaleY(1);
   }
-  .header-content.active .hamburger-menu {
-    color: #00b4ff;
+  .header-content.active .hamburger span {
+    background: #00b4ff;
   }
   .header-content .hamburger-menu {
     display: block;
     width: 33.33%;
     font-size: 24px;
     cursor: pointer;
-  }
-  .header-content .hamburger-menu i {
-    padding-right: 10px;
   }
   .header-content__number {
     width: 33.33%;
@@ -163,14 +160,16 @@
   }
   .header-content__list .mobile-item a {
     display: inline-block;
-    width: 50%;
+    width: 47%;
+    text-transform: none;
   }
   .header-content__list .mobile-item i {
     margin-right: 5px;
   }
   .header-content__list .mobile-item span {
     font-weight: 400;
-    width: 50%;
+    font-size: 18px;
+    width: 53%;
     text-transform: none;
   }
   .header-title__text h1 {
