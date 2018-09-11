@@ -11,10 +11,323 @@
     text-decoration: none;
     cursor: pointer;
   }
+  .spoiler-title:hover {
+    color: #00b4ff;
+  }
+}
+
+@media (max-width: 1279px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .wrapper {
+    max-width: 960px;
+  }
+  .wrapper--tablet {
+    width: 100%;
+    padding: 0;
+  }
+  .header-content {
+    padding: 40px 15px;
+  }
+  .header-content__img {
+    margin-right: 40px;
+  }
+  .header .social-circle {
+    display: none;
+  }
+  .main-content {
+    padding: 0 15px;
+  }
+  .main-content__line:before, .main-content__line:after {
+    display: none;
+  }
+  .main-content__item {
+    width: 225px;
+  }
+  .main-scroll .wrapper {
+    padding: 0 0 0 15px;
+  }
+  .franchise-calc__list li {
+    padding-left: 15px;
+  }
+  .franchise-calc__list li.active:before {
+    left: 0;
+  }
+  .franchise-calc__left {
+    width: 46.5%;
+  }
+  .franchise-calc__right {
+    padding-left: 50px;
+    width: 53.5%;
+  }
+  .franchise-tabs__btn .gorod-btn {
+    width: 140px;
+  }
+  .person-slider {
+    width: 79%;
+  }
+  .slick-prev {
+    left: -95px !important;
+  }
+  .slick-next {
+    right: -95px !important;
+  }
+  .main-spoilers__item .spoiler-counter {
+    left: 0;
+  }
+  .main-spoilers__item .spoiler-title {
+    padding-left: 70px;
+  }
+  .main-spoilers__item .spoiler-title:after {
+    right: 15px;
+  }
+  .footer-contacts {
+    width: 40%;
+  }
+  .footer-adress {
+    width: 37%;
+  }
+  .footer .social-circle {
+    width: 23%;
+  }
+}
+
+@media (max-width: 959px) {
+  .wrapper {
+    max-width: 720px;
+  }
+  .wrapper--tablet {
+    padding: 0 15px;
+  }
+  .header-content__img {
+    width: 33.33%;
+    margin: 0;
+  }
+  .header-content__img img {
+    margin: auto;
+  }
+  .header-content.active .header-content__list {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .header-content.active .hamburger-menu {
+    color: #00b4ff;
+  }
+  .header-content .hamburger-menu {
+    display: block;
+    width: 33.33%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header-content__number {
+    width: 33.33%;
+    text-align: right;
+  }
+  .header-content__list {
+    position: fixed;
+    left: 0;
+    top: 103px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 24px;
+    padding: 50px 15px 150px 15px;
+    overflow: scroll;
+    background-color: #fff;
+    box-shadow: 0px -2px 16px 0px rgba(0, 0, 0, 0.07);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity .3s , transform .3s;
+    z-index: 99;
+  }
+  .header-content__list .header-content__item + .header-content__item {
+    margin: 30px 0 0 0;
+  }
+  .header-content__list .mobile-item {
+    display: block;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 2px solid #eeeeee;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  .header-content__list .mobile-item a {
+    display: inline-block;
+    width: 50%;
+  }
+  .header-content__list .mobile-item i {
+    margin-right: 5px;
+  }
+  .header-content__list .mobile-item span {
+    font-weight: 400;
+    width: 50%;
+    text-transform: none;
+  }
+  .header-title__text h1 {
+    font-size: 45px;
+  }
+  .main-title {
+    width: 100%;
+  }
+  .main-title h2 {
+    font-size: 36px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .main-content__item {
+    width: 48%;
+  }
+  .main-content__item:nth-child(n+4) {
+    margin-top: 55px;
+  }
+  .main-content__line {
+    display: none;
+  }
+  .scroll-text {
+    flex-wrap: wrap;
+    padding-right: 15px;
+  }
+  .scroll-text__content + .scroll-text__content {
+    margin: 35px 0 0 0;
+  }
+  .scroll-text__content {
+    width: 100%;
+  }
+  .franchise-calc__content .franchise-calc__arrow {
+    display: none;
+  }
+  .franchise-calc__content .franchise-calc__left {
+    border: none;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .franchise-calc__content .franchise-calc__left li {
+    width: 100%;
+  }
+  .franchise-calc__content .franchise-calc__right {
+    padding: 0;
+    width: 100%;
+    /*      img{
+        display: none;
+      }*/
+  }
+  .franchise-calc__content .franchise-calc__right .price-block p {
+    padding-left: 0;
+    text-align: left;
+    font-weight: 700;
+    /*margin-top: 70px;*/
+  }
+  .franchise-calc__content .franchise-calc__right .franchise-tabs__btn span {
+    width: 180px;
+  }
+  .scetch-map__item {
+    width: 50%;
+    padding: 0 5px 0 40px;
+  }
+  .main-spoilers__item .spoiler-title span {
+    width: 70%;
+  }
+  .footer .wrapper {
+    display: block;
+    clear: both;
+    overflow: auto;
+  }
+  .footer-contacts {
+    width: 50%;
+    float: left;
+  }
+  .footer-contacts a {
+    display: block;
+  }
+  .footer-contacts a + a {
+    margin: 50px 0 0 0;
+  }
+  .footer-adress {
+    width: 50%;
+    float: right;
+    text-align: left;
+  }
+  .footer .social-circle {
+    width: 50%;
+    float: right;
+    margin-top: 25px;
+  }
+  .footer .social-circle ul {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .slick-next {
+    right: -70px !important;
+  }
+  .slick-prev {
+    left: -70px !important;
+  }
+  .slick-next, .slick-prev {
+    top: calc(100% + 52px) !important;
+  }
 }
 
 @media (max-width: 719px) {
+  .wrapper {
+    max-width: 576px;
+  }
   .modal-content {
     width: 60%;
+  }
+  .header-title__item .item-wrapper {
+    width: 180px;
+  }
+  .header-title__text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .main-scroll .wrapper {
+    padding: 0;
+  }
+  .main-scroll .main-title {
+    padding: 0 15px;
+  }
+  .scroll-text {
+    padding: 0 15px;
+  }
+  .scroll-grid__wrapper {
+    flex-wrap: wrap;
+  }
+  .scroll-grid__item {
+    width: calc(50% - 15px);
+    margin-left: 15px;
+  }
+  .person-slider {
+    width: 100%;
+  }
+  .person-slider .person-position {
+    text-align: center;
+  }
+  .person-slider__item {
+    text-align: left;
+  }
+  .person-slider .slick-next {
+    right: 0 !important;
+  }
+  .person-slider .slick-prev {
+    left: 0 !important;
+  }
+  .main-spoilers__item .spoiler-title span {
+    padding-right: 30px;
+    width: 100%;
+  }
+  .person-slider__item span:before {
+    display: none;
   }
 }

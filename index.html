@@ -7,14 +7,18 @@
     <!-- <link rel="icon" href="" type="image/png"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
       <div class="header-sticky">
         <div class="header-sticky__wrapper">
           <div class="header-content">
+            <div class="hamburger-menu">
+              <i class="fas fa-bars"></i>
+            </div>
             <div class="header-content__img">
               <img src="img/Logo.png" alt="">
             </div>
@@ -26,6 +30,10 @@
               <li class="header-content__item"><a href="#">Этапы</a></li>
               <li class="header-content__item"><a href="#">Отзывы</a></li>
               <li class="header-content__item"><a href="#">Контакты</a></li>
+              <li class="mobile-item">
+                <a href="mailto:info@gmail.com"><i class="far fa-envelope"></i>info@gmail.com</a>
+                <span>г. Москва, ул. Малиновская, 48/5</span>
+              </li>
             </ul>
             <p class="header-content__number"><a href="tel:0 800 500 60 70">0 800 500 60 70</a></p>
           </div>
@@ -33,7 +41,7 @@
       </div>
     </div>
     <div class="header-title" style="background-image: url('img/header-title.png');">
-      <div class="header-title__social">
+      <div class="social-circle">
         <ul>
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
@@ -55,25 +63,27 @@
           <div class="header-title__item">
             <div class="item-wrapper">
               <img src="img/column2.png" alt="">
+              <img src="img/header-arrow.svg" class="header-arrow" alt="">
               <p><strong>Мобильное приложение</strong><br>Приложение под iOS и Android</p>
             </div>
           </div>
           <div class="header-title__item">
             <div class="item-wrapper">
               <img src="img/column3.png" alt="">
+              <img src="img/header-arrow.svg" class="header-arrow" alt="">
               <p><strong>Учебный материал</strong><br>Полная сопроводительная материалы </p>
             </div>
           </div>
         </div>
         <div class="btn-holder">
           <a href="#" class="gorod-btn">Оформить франшизу</a>
-          <a href="#"><img src="img/arrow-svg.svg" alt=""></a>
+          <a href="#calc"><img src="img/arrow-svg.svg" alt=""></a>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="wrapper">
+    <div class="wrapper wrapper--tablet">
       <div class="main-title">
         <h2>Надежная Модель бизнеса</h2>
         <p>Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение новых предложений.</p>
@@ -112,7 +122,9 @@
         </div>
         <div class="scroll-holder">
           <div class="scrollbar" id="scrollbar">
-            <div class="force-overflow"></div>
+            <div class="scrollbar__image">
+              <img class="gorod-example" data-src="img/scroll-img/Gorod-main.png" alt="">
+            </div>
           </div>
         </div>
         <div class="scroll-text">
@@ -146,47 +158,47 @@
             <div class="scrollbar" id="scrollbar">
               <div class="scroll-grid__wrapper">
                 <div class="scroll-grid__item">
-                  <img class="myImg" src="img/scroll-img/gorod_авто_фильтры.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_афиша.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod-menu.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_авто.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_работа.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_личный кабинет_редактировать.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_объявления.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_недвижимость_добавить_объявление.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_новости_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_авто_фильтры.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_афиша.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod-menu.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_авто.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_работа.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_личный кабинет_редактировать.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_объявления.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_недвижимость_добавить_объявление.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_новости_подробнее.png" alt="">
                 </div>
                 <div class="scroll-grid__item">
-                  <img class="myImg" src="img/scroll-img/gorod_карта_1.png" alt="">
-                  <img class="myImg" src="img/scroll-img/город_регистрация.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_авто_подробнее.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_карта_2.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_карта_3.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия_подробнее.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_ресторан_подробнее1.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия_подробнее222.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_личный кабинет_финансы.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_карта_1.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/город_регистрация.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_авто_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_карта_2.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_карта_3.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_ресторан_подробнее1.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия_подробнее222.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_личный кабинет_финансы.png" alt="">
                 </div>
                 <div class="scroll-grid__item">
-                  <img class="myImg" src="img/scroll-img/gorod_карта_4.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_ресторан_подробнее.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_личный кабинет_избранное.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия_3.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия_2.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_новости_подробнее.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_ресторан_отзывы.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_личный кабинет_добавить_карту.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_карта_4.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_ресторан_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_личный кабинет_избранное.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия_3.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия_2.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_новости_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_ресторан_отзывы.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_личный кабинет_добавить_карту.png" alt="">
                 </div>
                 <div class="scroll-grid__item">
-                  <img class="myImg" src="img/scroll-img/gorod_главная.png" alt="">
-                  <img class="myImg" src="img/scroll-img/" alt="">
-                  <img class="myImg" src="img/scroll-img/город_авторизация.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_ресторан_чаевые.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_предприятия_4.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_недвижимость_подробнее.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_личный кабинет_добавить_карту.png" alt="">
-                  <img class="myImg" src="img/scroll-img/gorod_ресторан_инф.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_главная.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_афиша_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/город_авторизация.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_ресторан_чаевые.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_предприятия_4.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_недвижимость_подробнее.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_личный кабинет_добавить_карту.png" alt="">
+                  <img class="myImg" data-src="img/scroll-img/gorod_ресторан_инф.png" alt="">
                 </div>
               </div>
             </div>
@@ -226,51 +238,53 @@
         <div class="main-title">
           <h2>Пакеты франшиз</h2>
         </div>
-        <div class="franchise-block__content">
-          <div class="franchise-block__card">
-            <h3>Пакет Light</h3>
-            <ul>
-              <li>сайт, приложение iOS и Android,<br>литература и документы</li>
-              <li>поэтапное обучение <br>помощь в организации</li>
-              <li>что входит 3 пункт <br>вторая строка</li>
-            </ul>
-            <div class="franchise-block__price">
-                <p>от <strong>1 000</strong> руб.</p>
-                <span>30<br><q>дней</q></span>
+        <div class="card-slider-holder">
+          <div class="franchise-block__content">
+            <div class="franchise-block__card">
+              <h3>Пакет Light</h3>
+              <ul>
+                <li>сайт, приложение iOS и Android,<br>литература и документы</li>
+                <li>поэтапное обучение <br>помощь в организации</li>
+                <li>что входит 3 пункт <br>вторая строка</li>
+              </ul>
+              <div class="franchise-block__price">
+                  <p>от <strong>1 000</strong> руб.</p>
+                  <span>30<br><q>дней</q></span>
+              </div>
+              <a href="#" class="gorod-btn">подключить</a>
             </div>
-            <a href="#" class="gorod-btn">подключить</a>
-          </div>
-          <div class="franchise-block__card franchise--pro">
-            <h3>Пакет PRO</h3>
-            <ul>
-              <li>профессиональная помощь в настройки рекламы</li>
-              <li>бесплатное обновление до<br>2 версии с расширенным функци..</li>
-              <li>что входит 3 пункт <br> вторая строка</li>
-              <li>что входит 4 пункт <br>вторая строка</li>
-            </ul>
-            <div class="franchise-block__price">
-                <p>от <strong>2 695</strong> руб.</p>
-                <span>90<br><q>дней</q></span>
+            <div class="franchise-block__card franchise--pro">
+              <h3>Пакет PRO</h3>
+              <ul>
+                <li>профессиональная помощь в настройки рекламы</li>
+                <li>бесплатное обновление до<br>2 версии с расширенным функци..</li>
+                <li>что входит 3 пункт <br> вторая строка</li>
+                <li>что входит 4 пункт <br>вторая строка</li>
+              </ul>
+              <div class="franchise-block__price">
+                  <p>от <strong>2 695</strong> руб.</p>
+                  <span>90<br><q>дней</q></span>
+              </div>
+              <a href="#" class="gorod-btn">подключить</a>
             </div>
-            <a href="#" class="gorod-btn">подключить</a>
-          </div>
-          <div class="franchise-block__card">
-            <h3>Пакет Business</h3>
-            <ul>
-              <li>сайт, приложение iOS и Android,<br>литература и документы</li>
-              <li>поэтапное обучение <br>помощь в организации</li>
-              <li>что входит 3 пункт <br>вторая строка</li>
-            </ul>
-            <div class="franchise-block__price">
-                <p>от <strong>3 695</strong> руб.</p>
-                <span>60<br><q>дней</q></span>
+            <div class="franchise-block__card">
+              <h3>Пакет Business</h3>
+              <ul>
+                <li>сайт, приложение iOS и Android,<br>литература и документы</li>
+                <li>поэтапное обучение <br>помощь в организации</li>
+                <li>что входит 3 пункт <br>вторая строка</li>
+              </ul>
+              <div class="franchise-block__price">
+                  <p>от <strong>3 695</strong> руб.</p>
+                  <span>60<br><q>дней</q></span>
+              </div>
+              <a href="#" class="gorod-btn">подключить</a>
             </div>
-            <a href="#" class="gorod-btn">подключить</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="franchise-calc">
+    <div class="franchise-calc" id="calc">
       <div class="wrapper">
         <div class="main-title">
           <h2>Калькулятор Франшизы</h2>
@@ -282,22 +296,118 @@
               <img src="img/line-arrow.svg" alt="">
             </div>
             <ul class="franchise-calc__list">
-              <li class="active" data-st_vz='1000' data-adv_vz='2000' data-bui_vz='3000' data-st_in='1000' data-adv_in='2000' data-bui_in='3000' data-st_royal='1000' data-adv_royal='2000' data-bui_royal='3000' data-st_okyp='1000' data-adv_okyp='2000' data-bui_okyp='3000'>до 10.000 человек</li>
-              <li>от 10.000 человек до 20.000 человек</li>
-              <li>от 20.000 человек до 50.000 человек</li>
-              <li>от 50.000 человек до 100.000 человек</li>
-              <li>от 100.000 человек до 200.000 человек</li>
-              <li>от 300.000 человек до 500.000 человек</li>
-              <li>от 500.000 человек до 800.000 человек</li>
-              <li>более 800.000 человек</li>
+              <li class="active" 
+              data-start_price='s1'
+              data-advanced_price='a1'
+              data-buisness_price='b1'
+              data-start_invest='s1'
+              data-advanced_invest='a1'
+              data-buisness_invest='b1'
+              data-start_royalty='s1'
+              data-advanced_royalty='a1'
+              data-buisness_royalty='b1'
+              data-start_date='s1'
+              data-advanced_date='a1'
+              data-buisness_date='b1'>до 10.000 человек</li>
+              <li
+              data-start_price='s2'
+              data-advanced_price='a2'
+              data-buisness_price='b2'
+              data-start_invest='s2'
+              data-advanced_invest='a2'
+              data-buisness_invest='b2'
+              data-start_royalty='s2'
+              data-advanced_royalty='a2'
+              data-buisness_royalty='b2'
+              data-start_date='s2'
+              data-advanced_date='a2'
+              data-buisness_date='b2'>от 10.000 человек до 20.000 человек</li>
+              <li
+              data-start_price='s3'
+              data-advanced_price='a3'
+              data-buisness_price='b3'
+              data-start_invest='s3'
+              data-advanced_invest='a3'
+              data-buisness_invest='b3'
+              data-start_royalty='s3'
+              data-advanced_royalty='a3'
+              data-buisness_royalty='b3'
+              data-start_date='s3'
+              data-advanced_date='a3'
+              data-buisness_date='b3'>от 20.000 человек до 50.000 человек</li>
+              <li
+              data-start_price='s4'
+              data-advanced_price='a4'
+              data-buisness_price='b4'
+              data-start_invest='s4'
+              data-advanced_invest='a4'
+              data-buisness_invest='b4'
+              data-start_royalty='s4'
+              data-advanced_royalty='a4'
+              data-buisness_royalty='b4'
+              data-start_date='s4'
+              data-advanced_date='a4'
+              data-buisness_date='b4'>от 50.000 человек до 100.000 человек</li>
+              <li
+              data-start_price='s5'
+              data-advanced_price='a5'
+              data-buisness_price='b5'
+              data-start_invest='s5'
+              data-advanced_invest='a5'
+              data-buisness_invest='b5'
+              data-start_royalty='s5'
+              data-advanced_royalty='a5'
+              data-buisness_royalty='b5'
+              data-start_date='s5'
+              data-advanced_date='a5'
+              data-buisness_date='b5'>от 100.000 человек до 200.000 человек</li>
+              <li
+              data-start_price='s6'
+              data-advanced_price='a6'
+              data-buisness_price='b6'
+              data-start_invest='s6'
+              data-advanced_invest='a6'
+              data-buisness_invest='b6'
+              data-start_royalty='s6'
+              data-advanced_royalty='a6'
+              data-buisness_royalty='b6'
+              data-start_date='s6'
+              data-advanced_date='a6'
+              data-buisness_date='b6'>от 300.000 человек до 500.000 человек</li>
+              <li
+              data-start_price='s7'
+              data-advanced_price='a7'
+              data-buisness_price='b7'
+              data-start_invest='s7'
+              data-advanced_invest='a7'
+              data-buisness_invest='b7'
+              data-start_royalty='s7'
+              data-advanced_royalty='a7'
+              data-buisness_royalty='b7'
+              data-start_date='s7'
+              data-advanced_date='a7'
+              data-buisness_date='b7'>от 500.000 человек до 800.000 человек</li>
+              <li
+              data-start_price='s8'
+              data-advanced_price='a8'
+              data-buisness_price='b8'
+              data-start_invest='s8'
+              data-advanced_invest='a8'
+              data-buisness_invest='b8'
+              data-start_royalty='s8'
+              data-advanced_royalty='a8'
+              data-buisness_royalty='b8'
+              data-start_date='s8'
+              data-advanced_date='a8'
+              data-buisness_date='b8'>более 800.000 человек</li>
             </ul>
           </div>
           <div class="franchise-calc__right">
             <p class="franchise-calc__title">Пакет</p>
             <div class="franchise-tabs__btn">
-              <span class="gorod-btn" data-st>Start</span>
-              <span class="gorod-btn active" data-adv>Advanced</span>
-              <span class="gorod-btn" data-bui>Business</span>
+              <span class="gorod-btn" data-name="start">Start</span>
+              <span class="gorod-btn active" data-name="advanced">Advanced</span>
+              <span class="gorod-btn" data-name="buisness">Business</span>
             </div>
             <img src="img/franchise-line.svg" alt="">
             <div class="price-block">
@@ -314,23 +424,188 @@
                 <div class="price-block__right">
                   <div class="price-block__item">
                     <ul>
-                      <li>1’000 рублей</li>
-                      <li>500’000 рублей</li>
-                      <li>30’000 рублей</li>
-                      <li>12 месяцев</li>
+                      <li><span class="data-price"></span> рублей</li>
+                      <li><span class="data-invest"></span> рублей</li>
+                      <li><span class="data-royalty"></span> рублей</li>
+                      <li><span class="data-date"></span> месяцев</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="franchise-calc__modal">
+            <span class="gorod-btn">Купить франшизу</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="scetch-map" style="background-image: url(img/sketch-map-edit.png);">
+      <div class="wrapper">
+        <div class="main-title">
+          <h2>Этапы открытия</h2>
+        </div>
+        <div class="scetch-map__content">
+          <div class="scetch-map__item">
+            <img src="img/number1.png" alt="">
+            <p>Оставить заявку</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+          <div class="scetch-map__item">
+            <img src="img/number2.png" alt="">
+            <p>Заключить договор</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+          <div class="scetch-map__item">
+            <img src="img/number3.png" alt="">
+            <p>Получить продукт</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+          <div class="scetch-map__item">
+            <img src="img/number4.png" alt="">
+            <p>Изучить</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+          <div class="scetch-map__item">
+            <img src="img/number5.png" alt="">
+            <p>Сделать</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+          <div class="scetch-map__item">
+            <img src="img/number6.png" alt="">
+            <p>Открытие</p>
+            <span>Таким образом укрепление и развитие структуры играет важную роль в формировании модели развития. Значимость этих проблем настолько</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="person-review">
+      <div class="wrapper">
+        <div class="main-title">
+          <h2>Отзывы клиентов</h2>
+        </div>
+        <div class="person-slider">
+          <div class="person-slider__item">
+            <div class="person-img" style="background-image: url('');">
+            </div>
+            <p class="person-position">Должность</p>
+            <q>Не следует, однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития.</q>
+            <span>Андрей Коваль, 17.05.2018</span>
+          </div>
+          <div class="person-slider__item">
+            <div class="person-img" style="background-image: url('');">
+            </div>
+            <p class="person-position">Должность</p>
+            <q>Не следует, однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития.</q>
+            <span>Андрей Коваль, 17.05.2018</span>
+          </div>
+          <div class="person-slider__item">
+            <div class="person-img" style="background-image: url('');">
+            </div>
+            <p class="person-position">Должность</p>
+            <q>Не следует, однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития.</q>
+            <span>Андрей Коваль, 17.05.2018</span>
+          </div>
+          <div class="person-slider__item">
+            <div class="person-img" style="background-image: url('');">
+            </div>
+            <p class="person-position">Должность</p>
+            <q>Не следует, однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития.</q>
+            <span>Андрей Коваль, 17.05.2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-spoilers">
+      <div class="wrapper">
+        <div class="main-title">
+          <h2>Ответы на вопросы</h2>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">1</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">2</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">3</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">4</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">5</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-spoilers__item">
+          <p class="spoiler-counter">6</p>
+          <div class="spoiler-title">
+            <span>Таким образом укрепление и развитие структуры играет важную роль?</span>
+            <div class="spoiler-title__content">
+              <p>текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-spoilers__btn">
+        <span class="gorod-btn"></span>
+      </div>
+    </div>
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1153157388244!2d30.51611151523821!3d50.43895269607514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe93cd0283%3A0xd49b25fec5e02dbe!2z0KHQkdCj!5e0!3m2!1suk!2sua!4v1536653606876" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-contacts">
+        <a href="tel:0 800 500 60 70"><i class="fas fa-mobile-alt"></i>0 800 500 60 70</a>
+        <a href="mailto:info@gmail.com"><i class="far fa-envelope"></i>info@gmail.com</a>
+      </div>
+      <div class="footer-adress">
+        <p>г. Москва, ул. Малиновская, 48/5</p>
+      </div>
+      <div class="social-circle">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.lazy.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
