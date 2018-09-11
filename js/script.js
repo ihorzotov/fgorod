@@ -9,9 +9,10 @@ var modal = $('#myModal');
 var img = $('.myImg');
 var modalImg = $("#img01");
     img.on('click', function(){
-        modal.css("display","block");
+        modal.css({"display":"block", "z-index": "99"});
         modalImg.attr('src', $(this).attr('src'));
         $('main').css("overflow","hidden");
+        $('body').addClass('overflow');
     });
 
 
@@ -20,6 +21,7 @@ var span = $(".close");
 span.on('click',function(){
     modal.css("display","none");
     $('main').css("overflow","visible");
+    $('body').removeClass('overflow');
 });
 
 function dataHolder(item){

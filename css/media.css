@@ -123,6 +123,9 @@
     font-size: 24px;
     cursor: pointer;
   }
+  .header-content .hamburger-menu i {
+    padding-right: 10px;
+  }
   .header-content__number {
     width: 33.33%;
     text-align: right;
