@@ -14,6 +14,41 @@
   .spoiler-title:hover {
     color: #00b4ff;
   }
+  .personal-info__form .gorod-btn:hover {
+    background-color: #f77846;
+  }
+  .header-content__item:hover, .header-content__number:hover, .footer-contacts a:hover {
+    color: #00b4ff;
+  }
+  .header .social-circle li:hover {
+    background-color: #00b4ff;
+    color: #fff;
+  }
+  .franchise-tabs__btn .gorod-btn:hover {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  .franchise-block__card .gorod-btn:hover {
+    background-color: #fff;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+    color: #3d3d3d;
+  }
+  .main-spoilers__btn .gorod-btn:hover {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+  .slick-arrow:hover {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+  .btn-holder .gorod-btn:hover, .franchise-calc__modal .gorod-btn:hover {
+    background-color: #f77846;
+  }
+  .footer .social-circle li:hover {
+    background-color: #fff;
+    color: #3d3d3d;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+  .card-wrapper.overflow:hover .franchise-block__price:before {
+    color: rgba(58, 58, 58, 0.8);
+  }
 }
 
 @media (max-width: 1279px) {
@@ -117,6 +152,17 @@
   .header-content.active .hamburger span {
     background: #00b4ff;
   }
+  .header-content.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    top: 75px;
+    left: 0;
+    z-index: 1;
+  }
   .header-content .hamburger-menu {
     display: block;
     width: 33.33%;
@@ -135,6 +181,7 @@
     height: 100%;
     display: block;
     font-size: 24px;
+    min-width: 576px;
     padding: 50px 15px 150px 15px;
     overflow: scroll;
     background-color: #fff;
@@ -218,15 +265,11 @@
   .franchise-calc__content .franchise-calc__right {
     padding: 0;
     width: 100%;
-    /*      img{
-        display: none;
-      }*/
   }
   .franchise-calc__content .franchise-calc__right .price-block p {
     padding-left: 0;
     text-align: left;
     font-weight: 700;
-    /*margin-top: 70px;*/
   }
   .franchise-calc__content .franchise-calc__right .franchise-tabs__btn span {
     width: 180px;
@@ -265,6 +308,12 @@
   }
   .footer .social-circle ul {
     justify-content: flex-start;
+  }
+  .personal-info__form {
+    width: 500px;
+  }
+  .personal-info__form .js-attr__img:before {
+    border-width: 12px 13px 0 13px;
   }
 }
 
@@ -331,5 +380,14 @@
   }
   .person-slider__item span:before {
     display: none;
+  }
+  .franchise-calc__content .franchise-calc__right .franchise-tabs__btn span {
+    width: 170px;
+  }
+  .personal-info__form {
+    width: 400px;
+  }
+  .personal-info__form .js-attr__img:before {
+    border-width: 9px 10px 0 10px;
   }
 }

@@ -24,16 +24,16 @@
               </div>
             </div>
             <div class="header-content__img">
-              <img src="img/Logo.png" alt="">
+              <a href="#header"><img src="img/Logo.png" alt=""></a>
             </div>
             <ul class="header-content__list">
-              <li class="header-content__item"><a href="#">Бизнес</a></li>
-              <li class="header-content__item"><a href="#">Доход</a></li>
-              <li class="header-content__item"><a href="#">Пакеты</a></li>
-              <li class="header-content__item"><a href="#">Калькулятор</a></li>
-              <li class="header-content__item"><a href="#">Этапы</a></li>
-              <li class="header-content__item"><a href="#">Отзывы</a></li>
-              <li class="header-content__item"><a href="#">Контакты</a></li>
+              <li class="header-content__item"><a href="#buisness">Бизнес</a></li>
+              <li class="header-content__item"><a href="#incomes">Доход</a></li>
+              <li class="header-content__item"><a href="#package">Пакеты</a></li>
+              <li class="header-content__item"><a href="#calc">Калькулятор</a></li>
+              <li class="header-content__item"><a href="#stage">Этапы</a></li>
+              <li class="header-content__item"><a href="#review">Отзывы</a></li>
+              <li class="header-content__item"><a href="#footer">Контакты</a></li>
               <li class="mobile-item">
                 <a href="mailto:info@gmail.com"><i class="far fa-envelope"></i>info@gmail.com</a>
                 <span>г. Москва, ул. Малиновская, 48/5</span>
@@ -80,14 +80,14 @@
           </div>
         </div>
         <div class="btn-holder">
-          <a href="#" class="gorod-btn">Оформить франшизу</a>
-          <a href="#calc"><img src="img/arrow-svg.svg" alt=""></a>
+          <a href="#calc" class="gorod-btn">Оформить франшизу</a>
+          <a href="#buisness"><img src="img/arrow-svg.svg" alt=""></a>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="wrapper wrapper--tablet">
+    <div class="wrapper wrapper--tablet" id="buisness">
       <div class="main-title">
         <h2>Надежная Модель бизнеса</h2>
         <p>Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение новых предложений.</p>
@@ -118,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div class="main-scroll">
+    <div class="main-scroll" id="incomes">
       <div class="wrapper">
         <div class="main-title">
           <h2>Источники дохода</h2>
@@ -238,51 +238,59 @@
       </div>
     </div>
     <div class="franchise-block" style="background-image:url(img/franchise.png); ">
-      <div class="wrapper">
+      <div class="wrapper" id="package">
         <div class="main-title">
           <h2>Пакеты франшиз</h2>
         </div>
         <div class="card-slider-holder">
           <div class="franchise-block__content">
-            <div class="franchise-block__card">
-              <h3>Пакет Light</h3>
-              <ul>
-                <li>сайт, приложение iOS и Android,<br>литература и документы</li>
-                <li>поэтапное обучение <br>помощь в организации</li>
-                <li>что входит 3 пункт <br>вторая строка</li>
-              </ul>
-              <div class="franchise-block__price">
-                  <p>от <strong>1 000</strong> руб.</p>
-                  <span>30<br><q>дней</q></span>
-              </div>
-              <a href="#" class="gorod-btn">подключить</a>
-            </div>
             <div class="franchise-block__card franchise--pro">
-              <h3>Пакет PRO</h3>
-              <ul>
-                <li>профессиональная помощь в настройки рекламы</li>
-                <li>бесплатное обновление до<br>2 версии с расширенным функци..</li>
-                <li>что входит 3 пункт <br> вторая строка</li>
-                <li>что входит 4 пункт <br>вторая строка</li>
-              </ul>
-              <div class="franchise-block__price">
-                  <p>от <strong>2 695</strong> руб.</p>
-                  <span>90<br><q>дней</q></span>
+              <div class="card-wrapper">
+                <h3>Пакет Advanced</h3>
+                <ul class="card-wrapper__list">
+                  <li>профессиональная помощь в настройки рекламы</li>
+                  <li>бесплатное обновление до<br>2 версии с расширенным функци..</li>
+                  <li>что входит 3 пункт <br> вторая строка</li>
+                  <li>что входит 4 пункт <br>вторая строка</li>
+                </ul>
+                <div class="franchise-block__price" >
+                    <p>от <strong>2 695</strong> руб.</p>
+                    <span>90<br><q>дней</q></span>
+                </div>
+                <a href="#calc" class="gorod-btn" data-target="advanced">подключить</a>
               </div>
-              <a href="#" class="gorod-btn">подключить</a>
             </div>
             <div class="franchise-block__card">
-              <h3>Пакет Business</h3>
-              <ul>
-                <li>сайт, приложение iOS и Android,<br>литература и документы</li>
-                <li>поэтапное обучение <br>помощь в организации</li>
-                <li>что входит 3 пункт <br>вторая строка</li>
-              </ul>
-              <div class="franchise-block__price">
-                  <p>от <strong>3 695</strong> руб.</p>
-                  <span>60<br><q>дней</q></span>
+              <div class="card-wrapper">
+                <h3>Пакет Business</h3>
+                <ul class="card-wrapper__list">
+                  <li>сайт, приложение iOS и Android,<br>литература и документы</li>
+                  <li>поэтапное обучение <br>помощь в организации</li>
+                  <li>что входит 3 пункт <br>вторая строка</li>
+                  <li>что входит 3 пункт <br>вторая строка</li>
+                  <li>что входит 3 пункт <br>вторая строка</li>
+                </ul>
+                <div class="franchise-block__price">
+                    <p>от <strong>3 695</strong> руб.</p>
+                    <span>60<br><q>дней</q></span>
+                </div>
+                <a href="#calc" class="gorod-btn" data-target="buisness">подключить</a>
               </div>
-              <a href="#" class="gorod-btn">подключить</a>
+            </div>
+            <div class="franchise-block__card">
+              <div class="card-wrapper">
+                <h3>Пакет Start</h3>
+                <ul class="card-wrapper__list">
+                  <li>сайт, приложение iOS и Android,<br>литература и документы</li>
+                  <li>поэтапное обучение <br>помощь в организации</li>
+                  <li>что входит 3 пункт <br>вторая строка</li>
+                </ul>
+                <div class="franchise-block__price">
+                    <p>от <strong>1 000</strong> руб.</p>
+                    <span>30<br><q>дней</q></span>
+                </div>
+                <a href="#calc" class="gorod-btn" data-target="start">подключить</a>
+              </div>
             </div>
           </div>
         </div>
@@ -299,112 +307,114 @@
             <div class="franchise-calc__arrow">
               <img src="img/line-arrow.svg" alt="">
             </div>
-            <ul class="franchise-calc__list">
-              <li class="active" 
-              data-start_price='s1'
-              data-advanced_price='a1'
-              data-buisness_price='b1'
-              data-start_invest='s1'
-              data-advanced_invest='a1'
-              data-buisness_invest='b1'
-              data-start_royalty='s1'
-              data-advanced_royalty='a1'
-              data-buisness_royalty='b1'
-              data-start_date='s1'
-              data-advanced_date='a1'
-              data-buisness_date='b1'>до 10.000 человек</li>
-              <li
-              data-start_price='s2'
-              data-advanced_price='a2'
-              data-buisness_price='b2'
-              data-start_invest='s2'
-              data-advanced_invest='a2'
-              data-buisness_invest='b2'
-              data-start_royalty='s2'
-              data-advanced_royalty='a2'
-              data-buisness_royalty='b2'
-              data-start_date='s2'
-              data-advanced_date='a2'
-              data-buisness_date='b2'>от 10.000 человек до 20.000 человек</li>
-              <li
-              data-start_price='s3'
-              data-advanced_price='a3'
-              data-buisness_price='b3'
-              data-start_invest='s3'
-              data-advanced_invest='a3'
-              data-buisness_invest='b3'
-              data-start_royalty='s3'
-              data-advanced_royalty='a3'
-              data-buisness_royalty='b3'
-              data-start_date='s3'
-              data-advanced_date='a3'
-              data-buisness_date='b3'>от 20.000 человек до 50.000 человек</li>
-              <li
-              data-start_price='s4'
-              data-advanced_price='a4'
-              data-buisness_price='b4'
-              data-start_invest='s4'
-              data-advanced_invest='a4'
-              data-buisness_invest='b4'
-              data-start_royalty='s4'
-              data-advanced_royalty='a4'
-              data-buisness_royalty='b4'
-              data-start_date='s4'
-              data-advanced_date='a4'
-              data-buisness_date='b4'>от 50.000 человек до 100.000 человек</li>
-              <li
-              data-start_price='s5'
-              data-advanced_price='a5'
-              data-buisness_price='b5'
-              data-start_invest='s5'
-              data-advanced_invest='a5'
-              data-buisness_invest='b5'
-              data-start_royalty='s5'
-              data-advanced_royalty='a5'
-              data-buisness_royalty='b5'
-              data-start_date='s5'
-              data-advanced_date='a5'
-              data-buisness_date='b5'>от 100.000 человек до 200.000 человек</li>
-              <li
-              data-start_price='s6'
-              data-advanced_price='a6'
-              data-buisness_price='b6'
-              data-start_invest='s6'
-              data-advanced_invest='a6'
-              data-buisness_invest='b6'
-              data-start_royalty='s6'
-              data-advanced_royalty='a6'
-              data-buisness_royalty='b6'
-              data-start_date='s6'
-              data-advanced_date='a6'
-              data-buisness_date='b6'>от 300.000 человек до 500.000 человек</li>
-              <li
-              data-start_price='s7'
-              data-advanced_price='a7'
-              data-buisness_price='b7'
-              data-start_invest='s7'
-              data-advanced_invest='a7'
-              data-buisness_invest='b7'
-              data-start_royalty='s7'
-              data-advanced_royalty='a7'
-              data-buisness_royalty='b7'
-              data-start_date='s7'
-              data-advanced_date='a7'
-              data-buisness_date='b7'>от 500.000 человек до 800.000 человек</li>
-              <li
-              data-start_price='s8'
-              data-advanced_price='a8'
-              data-buisness_price='b8'
-              data-start_invest='s8'
-              data-advanced_invest='a8'
-              data-buisness_invest='b8'
-              data-start_royalty='s8'
-              data-advanced_royalty='a8'
-              data-buisness_royalty='b8'
-              data-start_date='s8'
-              data-advanced_date='a8'
-              data-buisness_date='b8'>более 800.000 человек</li>
-            </ul>
+            <div class="franchise-calc__slider">
+              <ul class="franchise-calc__list">
+                <li class="active" 
+                data-start_price='s1'
+                data-advanced_price='a1'
+                data-buisness_price='b1'
+                data-start_invest='s1'
+                data-advanced_invest='a1'
+                data-buisness_invest='b1'
+                data-start_royalty='s1'
+                data-advanced_royalty='a1'
+                data-buisness_royalty='b1'
+                data-start_date='s1'
+                data-advanced_date='a1'
+                data-buisness_date='b1'><span>до 10.000 человек</span></li>
+                <li
+                data-start_price='s2'
+                data-advanced_price='a2'
+                data-buisness_price='b2'
+                data-start_invest='s2'
+                data-advanced_invest='a2'
+                data-buisness_invest='b2'
+                data-start_royalty='s2'
+                data-advanced_royalty='a2'
+                data-buisness_royalty='b2'
+                data-start_date='s2'
+                data-advanced_date='a2'
+                data-buisness_date='b2'><span>от 10.000 человек до 20.000 человек</span></li>
+                <li
+                data-start_price='s3'
+                data-advanced_price='a3'
+                data-buisness_price='b3'
+                data-start_invest='s3'
+                data-advanced_invest='a3'
+                data-buisness_invest='b3'
+                data-start_royalty='s3'
+                data-advanced_royalty='a3'
+                data-buisness_royalty='b3'
+                data-start_date='s3'
+                data-advanced_date='a3'
+                data-buisness_date='b3'><span>от 20.000 человек до 50.000 человек</span></li>
+                <li
+                data-start_price='s4'
+                data-advanced_price='a4'
+                data-buisness_price='b4'
+                data-start_invest='s4'
+                data-advanced_invest='a4'
+                data-buisness_invest='b4'
+                data-start_royalty='s4'
+                data-advanced_royalty='a4'
+                data-buisness_royalty='b4'
+                data-start_date='s4'
+                data-advanced_date='a4'
+                data-buisness_date='b4'><span>от 50.000 человек до 100.000 человек</span></li>
+                <li
+                data-start_price='s5'
+                data-advanced_price='a5'
+                data-buisness_price='b5'
+                data-start_invest='s5'
+                data-advanced_invest='a5'
+                data-buisness_invest='b5'
+                data-start_royalty='s5'
+                data-advanced_royalty='a5'
+                data-buisness_royalty='b5'
+                data-start_date='s5'
+                data-advanced_date='a5'
+                data-buisness_date='b5'><span>от 100.000 человек до 200.000 человек</span></li>
+                <li
+                data-start_price='s6'
+                data-advanced_price='a6'
+                data-buisness_price='b6'
+                data-start_invest='s6'
+                data-advanced_invest='a6'
+                data-buisness_invest='b6'
+                data-start_royalty='s6'
+                data-advanced_royalty='a6'
+                data-buisness_royalty='b6'
+                data-start_date='s6'
+                data-advanced_date='a6'
+                data-buisness_date='b6'><span>от 300.000 человек до 500.000 человек</span></li>
+                <li
+                data-start_price='s7'
+                data-advanced_price='a7'
+                data-buisness_price='b7'
+                data-start_invest='s7'
+                data-advanced_invest='a7'
+                data-buisness_invest='b7'
+                data-start_royalty='s7'
+                data-advanced_royalty='a7'
+                data-buisness_royalty='b7'
+                data-start_date='s7'
+                data-advanced_date='a7'
+                data-buisness_date='b7'><span>от 500.000 человек до 800.000 человек</span></li>
+                <li
+                data-start_price='s8'
+                data-advanced_price='a8'
+                data-buisness_price='b8'
+                data-start_invest='s8'
+                data-advanced_invest='a8'
+                data-buisness_invest='b8'
+                data-start_royalty='s8'
+                data-advanced_royalty='a8'
+                data-buisness_royalty='b8'
+                data-start_date='s8'
+                data-advanced_date='a8'
+                data-buisness_date='b8'><span>более 800.000 человек</span></li>
+              </ul>
+            </div>
           </div>
           <div class="franchise-calc__right">
             <p class="franchise-calc__title">Пакет</p>
@@ -438,6 +448,41 @@
               </div>
             </div>
           </div>
+          <div class="modal" id="franchise-modal">
+            <span class="close">&times;</span>
+            <form action="#" class="personal-info__form">
+              <div class="js-attr">
+                <div class="modal-package">
+                  <p>Пакет:<span></span></p>
+                </div>
+                <div class="modal-quantity">
+                  <span></span>
+                </div>
+                <div class="js-attr__img">
+                  <img src="img/franchise-line.svg" alt="">
+                </div>
+              </div>
+              <div class="form-wrapper">
+                <div class="input-holder">
+                  <label for="phone">Телефон</label>
+                  <input type="text" class="form-text" placeholder="" id="phone" required="">
+                </div>
+                <div class="input-holder">
+                  <label for="name">Имя</label>
+                  <input type="text" class="form-text" placeholder="" id="name">
+                </div>
+                <div class="input-holder wrong">
+                  <label for="e-mail">E-mal</label>
+                  <input type="text" class="form-text" placeholder="" id="e-mail">
+                </div>
+                <div class="input-holder">
+                  <label for="mail-text">Введите сообщение</label>
+                  <textarea id="mail-text" class="form-text"></textarea>
+                </div>
+              </div>
+              <input type="submit" class="gorod-btn" value="отправить">
+            </form>
+          </div>
           <div class="franchise-calc__modal">
             <span class="gorod-btn">Купить франшизу</span>
           </div>
@@ -445,7 +490,7 @@
       </div>
     </div>
     <div class="scetch-map" style="background-image: url(img/sketch-map-edit.png);">
-      <div class="wrapper">
+      <div class="wrapper" id="stage">
         <div class="main-title">
           <h2>Этапы открытия</h2>
         </div>
@@ -484,7 +529,7 @@
       </div>
     </div>
     <div class="person-review">
-      <div class="wrapper">
+      <div class="wrapper" id="review">
         <div class="main-title">
           <h2>Отзывы клиентов</h2>
         </div>
@@ -588,7 +633,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1153157388244!2d30.51611151523821!3d50.43895269607514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe93cd0283%3A0xd49b25fec5e02dbe!2z0KHQkdCj!5e0!3m2!1suk!2sua!4v1536653606876" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="wrapper">
       <div class="footer-contacts">
         <a href="tel:0 800 500 60 70"><i class="fas fa-mobile-alt"></i>0 800 500 60 70</a>
