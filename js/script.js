@@ -195,65 +195,38 @@ var holder = $(".input-holder input,textarea")
 
 $('.card-wrapper .gorod-btn').click(function(){
   var cardAttr = $(this).attr('data-target');
-  var activeGorod = $('.franchise-tabs__btn span').attr("data-name="+cardAttr+"");
-  activeGorod.addClass("active");
+  var activeGorod = $('.franchise-tabs__btn span[data-name="'+cardAttr+'"]');
+
+   activeGorod.addClass("active");
   $('.franchise-tabs__btn span').not('[data-name="'+cardAttr+'"]').removeClass("active");
   var franchiseAttr = $('.franchise-tabs__btn span.active').attr('data-name');
   $('.modal-package span').html(franchiseAttr);
   console.log(activeGorod)
 });
+
+
 //floating arrow
 $('.franchise-calc__slider').on('mousemove',function(event){
 
-
     var y = event.pageY;
 
-    $('.franchise-calc__arrow').offset({top:y});
+      $('.franchise-calc__arrow').offset({top:y});
 });
-//
+
 $('.franchise-calc__slider').on('mouseenter',function(){
+
     var y = event.offsetY;
-    $('.franchise-calc__arrow').animate({top:y}, 100);
+  
+      $('.franchise-calc__arrow').animate({top:y}, 200);
 });
 $('.franchise-calc__slider').on('mouseout',function(){
+   var y = event.offsetY;
+  
+   var li_Y = $('.franchise-calc__list .active').offset();
 
-    //$('.franchise-calc__arrow').removeClass('animate');
+     //$('.franchise-calc__arrow').offset({top:li_Y});
+    
+     //$('.franchise-calc__arrow').animate({top:y}, 300);
+    //console.log(li_Y);
 });
-
-
-// function gt3_menu_line(){
-//   var menu = jQuery('.main-menu.main_menu_container.menu_line_enable > ul');
-//   if (menu.length) {
-//     menu.each(function(){
-//       var menu = jQuery(this);
-//       var current = '';
-//       menu.append('<span class="menu_item_line"></span>');
-//       var menu_item = menu.find('> .menu-item');
-//       var currentItem = menu.find('> .current-menu-item');
-//       var currentItemParent = menu.find('> .current-menu-ancestor');
-//       var line = menu.find('.menu_item_line');
-//       if (currentItem.length || currentItemParent.length) {
-//         current = currentItem.length ? currentItem : (currentItemParent.length ? currentItemParent : '');
-//         line.css({width: current.find('>a').outerWidth()});
-//         line.css({left: current.find('>a').offset().left - menu.offset().left});
-//       }
-
-//       menu_item.mouseenter(function(){
-//                 line.css({width: jQuery(this).find('> a').outerWidth()});
-//                 line.css({left: jQuery(this).find('> a').offset().left - jQuery(this).parent().offset().left});
-//             });
-
-//             menu.mouseleave(function(){
-//                 if (current.length) {
-//                     line.css({width: current.find('> a').outerWidth()});
-//                     line.css({left: current.find('> a').offset().left - menu.offset().left});
-//                 } else {
-//                   line.css({width:'0'});
-//                     line.css({left:'100%'});
-//                 }
-//             });
-
-
-//     })
-//   }
-// }
+//
